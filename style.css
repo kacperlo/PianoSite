@@ -1,0 +1,28 @@
+body {
+   margin: 0;
+   overflow: hidden;
+}
+
+#blackKeys {
+   display: flex wrap;
+   position: absolute;
+   width: 50%;
+   margin-left: 31%;
+   margin-top: 20px;
+}
+
+#whiteKeys {
+   display: flex wrap;
+   position: absolute;
+   width: 50%;
+   margin-left: 30%;
+   margin-top: 50px;
+}
+
+img {
+   width: 4%;
+}
+
+.pressed {
+   opacity: 30%;
+}
