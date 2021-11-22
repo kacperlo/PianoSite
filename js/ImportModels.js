@@ -9,7 +9,7 @@ const ImportModels = (scene) => {
          pianoModel = gltf.scene;
          pianoModel.traverse((o) => {
             if (o.isMesh) {
-               let prevMaterial = o.material;
+               const prevMaterial = o.material;
                o.material = new THREE.MeshPhongMaterial();
                THREE.MeshBasicMaterial.prototype.copy.call(
                   o.material,
@@ -37,7 +37,7 @@ const ImportModels = (scene) => {
 
          whiteKeyModel.traverse((o) => {
             if (o.isMesh) {
-               let prevMaterial = o.material;
+               const prevMaterial = o.material;
                o.material = new THREE.MeshPhongMaterial();
                THREE.MeshBasicMaterial.prototype.copy.call(
                   o.material,
@@ -70,7 +70,7 @@ const ImportModels = (scene) => {
 
          blackKeyModel.traverse((o) => {
             if (o.isMesh) {
-               let prevMaterial = o.material;
+               const prevMaterial = o.material;
                o.material = new THREE.MeshPhongMaterial();
                THREE.MeshBasicMaterial.prototype.copy.call(
                   o.material,

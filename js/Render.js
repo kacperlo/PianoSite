@@ -7,7 +7,7 @@ const Render = () => {
 
 	const camera = SetupCamera();
 
-	let [whiteKeys, blackKeys] = ImportModels(scene);
+	const [whiteKeys, blackKeys] = ImportModels(scene);
 
 	const renderer = new THREE.WebGLRenderer();
 	renderer.setSize(window.innerWidth, window.innerHeight);

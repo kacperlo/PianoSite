@@ -13,7 +13,7 @@ const ClickingListeners = (whiteKeys, blackKeys) => {
 	let playingKeys = [];
 
 	document.addEventListener('keydown', (e) => {
-		let key = e.code;
+		const key = e.code;
 
 		if (!pressed[key]) {
 			pressed[key] = true;
@@ -31,7 +31,7 @@ const ClickingListeners = (whiteKeys, blackKeys) => {
 	});
 
 	document.addEventListener('keyup', (e) => {
-		let key = e.code;
+		const key = e.code;
 		pressed[key] = false;
 
 		if (whiteKeysNaming.includes(key) || blackKeysNaming.includes(key))
