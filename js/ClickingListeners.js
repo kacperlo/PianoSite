@@ -4,9 +4,9 @@ import { pressing, releasing } from './ClickingFunctions.js';
 const ClickingListeners = (whiteKeys, blackKeys) => {
 	let audio = new Map();
 	for (let key of whiteKeysNaming)
-		audio.set(key, new Audio(`./sounds/${key}.wav`));
+		audio.set(key, new Audio(`./sounds/${key}.mp3`));
 	for (let key of blackKeysNaming)
-		if (key != '-') audio.set(key, new Audio(`./sounds/${key}.wav`));
+		if (key != '-') audio.set(key, new Audio(`./sounds/${key}.mp3`));
 
 	let pressed = [];
 	let volumes = [];
